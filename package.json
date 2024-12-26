@@ -5,7 +5,8 @@
   "scripts": {
     "start": "nx serve --ssl --ssl-key environments/certificate/localhost.com-key.pem --ssl-cert environments/certificate/localhost.com.pem --host localhost.com --port 4200",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "lint": "nx lint"
   },
   "private": true,
   "dependencies": {
