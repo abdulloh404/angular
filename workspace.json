@@ -3,8 +3,9 @@
     "builder": "@angular-devkit/build-angular:dev-server",
     "options": {
       "browserTarget": "angular:build",
-      "host": "localhost",
       "ssl": true,
+      "host": "localhost.com",
+      "port": 4200,
       "sslKey": "environments/certificate/localhost.com-key.pem",
       "sslCert": "environments/certificate/localhost.com.pem"
     },
