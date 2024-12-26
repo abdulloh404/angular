@@ -1,9 +1,9 @@
 {
   "name": "@angular/source",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx serve --ssl --ssl-key ./environments/certificate/localhost.com-key.pem --ssl-cert ./environments/certificate/localhost.com.pem --port 4200",
+    "start": "nx serve --ssl --ssl-key environments/certificate/localhost.com-key.pem --ssl-cert environments/certificate/localhost.com.pem --port 4200",
     "build": "nx build",
     "test": "nx test"
   },
