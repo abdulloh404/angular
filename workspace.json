@@ -1,0 +1,17 @@
+{
+  "serve": {
+    "builder": "@angular-devkit/build-angular:dev-server",
+    "options": {
+      "browserTarget": "angular:build",
+      "host": "localhost",
+      "ssl": true,
+      "sslKey": "environments/certificate/localhost.com-key.pem",
+      "sslCert": "environments/certificate/localhost.com.pem"
+    },
+    "configurations": {
+      "production": {
+        "browserTarget": "angular:build:production"
+      }
+    }
+  }
+}
