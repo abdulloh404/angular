@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx serve start",
-    "start-ssl": "nx serve --ssl --ssl-key environments/certificate/localhost.key --ssl-cert environments/certificate/localhost.crt --port 4200",
+    "start": "nx serve --ssl --ssl-key environments/certificate/localhost.key --ssl-cert environments/certificate/localhost.crt --port 4200",
     "build": "nx build",
     "test": "nx test",
     "lint": "nx lint"
