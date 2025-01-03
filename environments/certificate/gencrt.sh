@@ -49,9 +49,10 @@ IP.1  = 127.0.0.1
 EOF
 
 # สร้าง CSR และ Private Key สำหรับ localhost
-echo "Creating CSR and Private Key for localhost..."
 openssl req -new -nodes -newkey rsa:4096 -keyout localhost.key -out localhost.csr \
+-subj "/C=TH/ST=Songkhla/L=Hatyai/O=Development-Certificates/OU=IT-Developer-Department/CN=localhost/emailAddress=abdulloh.mukem@gmail.com" \
 -config "$CONFIG_FILE" -reqexts req_ext || { echo "Failed to create localhost CSR"; exit 1; }
+
 
 # ลบไฟล์คอนฟิก CSR ชั่วคราว
 rm -f "$CONFIG_FILE"
